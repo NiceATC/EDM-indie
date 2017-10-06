@@ -49,7 +49,7 @@
       botName: "Indie Garçom BOT",
       language: "portuguese",
       chatLink: "https://api.myjson.com/bins/17dt79.json",
-      scriptLink: "https://rawgit.com/basicBot/source/master/basicBot.js",
+      scriptLink: "https://rawgit.com/NiceATC/EDM-indie/master/basicBot.js",
       roomLock: false, // Requires an extension to re-load the script
       startupCap: 1, // 1-200
       startupVolume: 0, // 0-100
@@ -112,6 +112,6 @@
     }));
 
     // Start the bot and extend it when it has loaded.
-    $.getScript("https://rawgit.com/basicBot/source/master/basicBot.js", extend);
+    $.getScript("https://rawgit.com/NiceATC/EDM-indie/master/basicBot.js", extend);
 
 }).call(this);
