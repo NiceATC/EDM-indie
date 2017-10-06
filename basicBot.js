@@ -191,7 +191,7 @@
     var botHostIDs = [5401598];
 
     var basicBot = {
-        version: '2.11.6 (05/10)',
+        version: '2.11.7 (05/10)',
         status: false,
         name: 'EDM & Indie',
         loggedInID: null,
