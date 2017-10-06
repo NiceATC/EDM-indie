@@ -56,7 +56,7 @@
 
     var loadChat = function(cb) {
         if (!cb) cb = function() {};
-        $.get('https://rawgit.com/NiceATC/source/master/lang/langIndex.json', function(json) {
+        $.get('https://api.myjson.com/bins/17dt79.json', function(json) {
             var link = basicBot.chatLink;
             if (json !== null && typeof json !== 'undefined') {
                 langIndex = json;
