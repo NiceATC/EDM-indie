@@ -259,7 +259,7 @@
             etaRestriction: false,
             welcome: true,
             opLink: null,
-            rulesLink: null,
+            rulesLink: 'https://github.com/EdmAndIndie/EdmAndIndie.github.io/blob/master/readme.md',
             themeLink: null,
             fbLink: null,
             youtubeLink: null,
@@ -3437,7 +3437,7 @@
                     }
                 }
             },
-
+            
             rulesCommand: {
                 command: 'rules',
                 rank: 'user',
@@ -3447,7 +3447,9 @@
                     if (!basicBot.commands.executable(this.rank, chat)) return void(0);
                     else {
                         if (typeof basicBot.settings.rulesLink === 'string')
-                            return API.sendChat("Encontre as regras da sala aqui: https://github.com/EdmAndIndie/EdmAndIndie.github.io/blob/master/readme.md");
+                            return API.sendChat(subChat(basicBot.chat.roomrules, {
+                                link: basicBot.settings.rulesLink
+                            }));
                     }
                 }
             },
