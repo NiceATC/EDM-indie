@@ -191,11 +191,11 @@
     var botHostIDs = [5401598];
 
     var basicBot = {
-        version: '2.11.3 (05/10)',
+        version: '2.11.5 (05/10)',
         status: false,
         name: 'EDM & Indie',
         loggedInID: null,
-        scriptLink: 'https://rawgit.com/basicBot/source/master/basicBot.js',
+        scriptLink: 'https://rawgit.com/NiceATC/EDM-indie/master/basicBot.js',
         cmdLink: '',
         chatLink: 'https://api.myjson.com/bins/17dt79.json',
         chat: null,
@@ -206,7 +206,7 @@
             botName: 'EDM & Indie',
             language: 'portuguese',
             chatLink: 'https://api.myjson.com/bins/17dt79.json',
-            scriptLink: 'https://rawgit.com/basicBot/source/master/basicBot.js',
+            scriptLink: 'https://rawgit.com/NiceATC/EDM-indie/master/basicBot.js',
             roomLock: false, // Requires an extension to re-load the script
             startupCap: 1, // 1-200
             startupVolume: 0, // 0-100
