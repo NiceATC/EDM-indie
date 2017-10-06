@@ -350,8 +350,7 @@
                     }, 1 * 1000, winner, pos);
                 }
             },
-            usersUsedRequebro: []
-        },
+            usersUsedRequebro: [],
             usersUsedBeats: []
         },
         User: function(id, name) {
