@@ -95,7 +95,7 @@
       etaRestriction: false,
       welcome: true,
       opLink: null,
-      rulesLink: null,
+      rulesLink: 'https://github.com/EdmAndIndie/EdmAndIndie.github.io/blob/master/readme.md',
       themeLink: null,
       fbLink: null,
       youtubeLink: null,
