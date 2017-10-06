@@ -191,7 +191,7 @@
     var botHostIDs = [5401598];
 
     var basicBot = {
-        version: '2.11.5 (05/10)',
+        version: '2.11.6 (05/10)',
         status: false,
         name: 'EDM & Indie',
         loggedInID: null,
@@ -3447,9 +3447,7 @@
                     if (!basicBot.commands.executable(this.rank, chat)) return void(0);
                     else {
                         if (typeof basicBot.settings.rulesLink === 'string')
-                            return API.sendChat(subChat(basicBot.chat.roomrules, {
-                                link: basicBot.settings.rulesLink
-                            }));
+                            return API.sendChat("Encontre as regras da sala aqui: https://github.com/EdmAndIndie/EdmAndIndie.github.io/blob/master/readme.md");
                     }
                 }
             },
@@ -3771,6 +3769,45 @@
                             API.sendChat(subChat(basicBot.chat.genres, {
                                 link: basicBot.settings.themeLink
                             }));
+                    }
+                }
+            },
+         
+            Tema01Command: {
+                command: 'temadestaque',
+                rank: 'user',
+                type: 'exact',
+                functionality: function(chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void(0);
+                    if (!basicBot.commands.executable(this.rank, chat)) return void(0);
+                    else {
+                        API.sendChat('Temas Destaque: EDM - Alternative/INDIE 🔞Vídeos NSFW são proibidos🔞');
+                    }
+                }
+            },
+            
+            Tema02Command: {
+                command: 'temaaceitavel',
+                rank: 'user',
+                type: 'exact',
+                functionality: function(chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void(0);
+                    if (!basicBot.commands.executable(this.rank, chat)) return void(0);
+                    else {
+                        API.sendChat('Temas Aceitáveis: POP - Contemporary R&B - Rap/HipHopAternativo - R&B - PopRap - MPB - Rock/Metal');
+                    }
+                }
+            },
+         
+            Tema03Command: {
+                command: 'proibido',
+                rank: 'user',
+                type: 'exact',
+                functionality: function(chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void(0);
+                    if (!basicBot.commands.executable(this.rank, chat)) return void(0);
+                    else {
+                        API.sendChat('Proibido Tocar: Rap Swag Brasileiro - Sertanejo - FUNK - K-POP - Arrocha - Axé Music - Bailão - Forró - Frevo - Lambada - Brega - Xote - Samba');
                     }
                 }
             },
