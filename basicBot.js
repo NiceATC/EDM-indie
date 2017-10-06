@@ -213,7 +213,7 @@
             startupEmoji: false, // true or false
             ss: false,
             ed: false,
-            roletapos: 1,
+            roletapos: 2,
             autowoot: true,
             autoskip: false,
             smartSkip: true,
@@ -331,7 +331,9 @@
                     basicBot.room.roulette.countdown = setTimeout(function() {
                         basicBot.room.roulette.endRoulette();
                     }, 60 * 1000);
-                    API.sendChat(basicBot.chat.isopen);
+                    API.sendChat(subChat(basicBot.chat.isopen, {
+                        pos: basicBot.settings.roletapos
+                    }));
                 },
                 endRoulette: function() {
                     basicBot.room.roulette.rouletteStatus = false;
